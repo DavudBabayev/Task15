@@ -1,0 +1,149 @@
+section {
+    width: 100%;
+    background-color: $bg3;
+    padding-bottom: 11%;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+
+    .sdiv1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .sdiv11 {
+            width: 40%;
+            text-align: center;
+            padding: 20px;
+            color: $bg4;
+
+            h1 {
+                font-size: 50px;
+                position: relative;
+
+                &::before {
+                    width: 80px;
+                    height: 2px;
+                    background: $bg4;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: calc((100% - 80px) / 2);
+                }
+            }
+        }
+
+        .sdiv12 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            img {
+                width: 20%;
+                height: auto;
+            }
+        }
+    }
+
+    .sdiv2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .sdiv21 {
+            width: 40%;
+            text-align: center;
+            padding: 20px;
+            color: $bg4;
+
+            h1 {
+                font-size: 50px;
+                position: relative;
+
+                &::before {
+                    width: 80px;
+                    height: 2px;
+                    background: $bg4;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: calc((100% - 80px) / 2);
+                }
+            }
+        }
+
+        .sdiv22 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            a {
+                width: 30%;
+
+                p {
+                    position: absolute;
+                    z-index: 1;
+                    top: 45%;
+                    left: 20%;
+                    text-decoration: none;
+                    color: $col1;
+                    font-size: 64px;
+                    font-weight: 600;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    z-index: 0;
+                }
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width:320px) {
+    section {
+        padding-bottom: 15%;
+        clip-path: polygon(0 0, 100% 0%, 100% 98%, 0% 100%);
+
+        .sdiv1 {
+            .sdiv11 {
+                width: 100%;
+            }
+
+            .sdiv12 {
+                flex-direction: column;
+
+                img {
+                    width: 90%;
+                }
+            }
+        }
+
+        .sdiv2 {
+            .sdiv21 {
+                width: 100%;
+            }
+
+            .sdiv22 {
+                flex-direction: column;
+
+                a {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
